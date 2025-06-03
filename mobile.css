@@ -1,0 +1,133 @@
+@media (max-width: 512px) {
+  .containers {
+    display: block !important;
+  }
+  .box {
+    width: 98%;
+    margin: 10px auto;
+    display: block;
+    max-width: 500px;
+    min-height: unset;
+    max-height: unset;
+    padding: 10px;
+  }
+  .box-title {
+    font-size: 1em;
+    padding-bottom: 3px;
+    gap: 5px;
+  }
+  .box-desc {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+  }
+  ul.box-items {
+    max-height: 120px;
+    font-size: 0.95em;
+  }
+  .see-all-btn {
+    font-size: 0.95em;
+    padding: 6px;
+    margin-top: 8px;
+  }
+  .country-flag, .country-flag-favicon {
+    height: 13px;
+    margin-left: 3px;
+  }
+  .blog-favicon {
+    width: 18px;
+    height: 18px;
+  }
+  .logo {
+    font-size: 1.3em;
+    margin: 12px 0;
+  }
+  footer {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 900px) {
+  .containers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 90%;
+    min-width: unset;
+    max-width: 500px;
+    min-height: unset;
+    max-height: unset;
+    margin: 10px 0;
+    padding: 18px;
+  }
+  .box-title {
+    font-size: 1.2em;
+    padding-bottom: 3px;
+    gap: 5px;
+  }
+  .box-desc {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  ul.box-items {
+    max-height: 180px;
+    font-size: 1em;
+  }
+  .see-all-btn {
+    font-size: 1em;
+    padding: 8px;
+    margin-top: 8px;
+  }
+  .country-flag, .country-flag-favicon {
+    height: 16px;
+    margin-left: 3px;
+  }
+  .blog-favicon {
+    width: 22px;
+    height: 22px;
+  }
+  .logo {
+    font-size: 2em;
+    margin: 12px 0;
+  }
+  footer {
+    font-size: 0.95em;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 98%;
+    padding: 10px;
+  }
+  .logo {
+    font-size: 1.3em;
+  }
+  .box-title {
+    font-size: 1em;
+  }
+  .box-desc {
+    font-size: 0.95em;
+  }
+  ul.box-items {
+    max-height: 120px;
+    font-size: 0.95em;
+  }
+  .see-all-btn {
+    font-size: 0.95em;
+    padding: 6px;
+  }
+  .country-flag, .country-flag-favicon {
+    height: 13px;
+  }
+  .blog-favicon {
+    width: 18px;
+    height: 18px;
+  }
+  footer {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+}

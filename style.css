@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('boxes.css');
+@import url('mobile.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(180, 180, 180);
+    scroll-behavior: smooth;
+}
+
+.vert-center {
+    display: flex;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    margin: 20px 0;
+    font-size: 52px;
+    font-family: 'Cherry Bomb One', cursive;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-decoration: none;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(30, 30, 30);
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.box-desc {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(30, 30, 30);
+    max-height: 40px;
+    min-height: 40px;
+}
+
+.box-items {
+    list-style: decimal;
+    color: #c7c7c7;
+    font-size: 0.9em;
+    padding-left: 2em;
+    counter-reset: item;
+}
+
+ul.box-items {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 190px;
+    max-height: 190px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+}
+
+ul.box-items li { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    counter-increment: item;
+    transition: transform 0.3s ease;
+}
+
+ul.box-items li:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+
+ul.box-items li::before {
+    content: counter(item);
+    position: absolute;
+    left: -2em;
+    color: #888888;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.blog-favicon {
+    border-radius: 50%;
+}
+
+.country-flag {
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 20px;
+    width: auto;
+}
+
+.country-flag-favicon {
+    height: 12px;
+    width: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    background: #292d33;
+    color: #fff;
+    padding: 10px;
+}
+
+footer p {
+    padding: 5px 0;
+}
+
+footer a {
+    color: #faecd9;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* SEE ALL BUTTON STYLES */
+
+.see-all-btn {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.grey-see-all {
+    background: #7a7a7a;
+}
+
+.darkgray-see-all {
+    background: #1d1d1d;
+}
+
+.dark-blue-see-all {
+    background: #002395;
+}
+
+.orange-see-all {
+    background: #F80;
+}
+
+.gold-see-all {
+    background: #DAA520;
+    color: rgb(50, 50, 50)
+}
+
+.blue-see-all {
+    background: #50b0ff;
+}
+
+.purple-see-all {
+    background: #5811ff;
+}
+
+.green-see-all {
+    background: #008000;
+}
+
+.brown-see-all {
+    background: #8B4513;
+}
+
+.see-all-btn:hover { 
+    transform: scale(1.05);
+}
+
+@media (max-width: 512px) {
+  .containers {
+    display: block !important;
+    padding: 0 8px;
+  }
+  .box {
+    width: 100%;
+    margin: 18px 0;
+    padding: 16px 12px;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+}
