@@ -174,7 +174,7 @@ footer a:hover {
     color: white;
     padding: 10px 6px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease-in-out;
     width: 100%;
     box-sizing: border-box;
     margin-left: 0;
@@ -225,6 +225,15 @@ footer a:hover {
 
 .brown-see-all {
     background: #8B4513;
+}
+
+.see-all-btn svg {
+    transition: margin-left 0.3s ease;
+    margin-left: 5px;
+}
+
+.see-all-btn:hover svg {
+    margin-left: 15px;
 }
 
 .see-all-btn:hover { 
