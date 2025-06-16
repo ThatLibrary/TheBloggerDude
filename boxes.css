@@ -21,6 +21,11 @@
     border-radius: 10px;
 }
 
+.orange-box {
+    border: 2px solid #FF8C00;
+    border-radius: 10px;
+}
+
 .grey-box {
     border: 2px solid;
     border-image: linear-gradient(to bottom, #808080, #fff) 1;
