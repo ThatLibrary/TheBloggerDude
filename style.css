@@ -144,11 +144,19 @@ ul.box-items li::before {
 
 footer {
     text-align: center;
-    margin-top: 20px;
     font-size: 14px;
     background: #292d33;
     color: #fff;
     padding: 10px;
+}
+
+.footer-image {
+    text-align: center;
+}
+
+.footer-img {
+    width: 50%;
+    height: 500px;
 }
 
 footer p {
@@ -262,5 +270,9 @@ footer a:hover {
     ul.box-items {
       height: 140px;
       max-height: 140px;
+    }
+
+    .footer-img {
+        width: 100%;
     }
 }
