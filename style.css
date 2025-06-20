@@ -44,11 +44,16 @@ header {
 
 .logo {
     margin: 20px 0;
-    font-size: 52px;
+    height: 100px;
     font-family: 'Cherry Bomb One', cursive;
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .containers {
@@ -250,7 +255,7 @@ footer a:hover {
 
 @media (max-width: 512px) {
     .logo {
-        font-size: 42px;
+        height: 65px;
     }
 
     .containers {
@@ -273,6 +278,7 @@ footer a:hover {
     }
 
     .footer-img {
+        height: 300px;
         width: 100%;
     }
 }

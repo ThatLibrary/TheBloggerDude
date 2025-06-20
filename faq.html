@@ -23,7 +23,7 @@
 
         .logo {
             margin: 20px 0;
-            font-size: 48px;
+            height: 100px;
             font-family: 'Cherry Bomb One', cursive;
             color: #fff;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -49,11 +49,19 @@
             body {
                 padding: 20px;
             }
+
+            .logo {
+                height: 65px;
+            }
         }
     </style>
 
     <header>
-        <a href="index.html" class="logo">TheBloggerDude</a>
+        <div class="logo-center">
+            <a href="index.html">
+                <img src="./logo.png" alt="TheBloggerDude Logo" class="logo">
+            </a>
+        </div>
     </header>
 
     <h1>Frequently Asked Questions</h1>
